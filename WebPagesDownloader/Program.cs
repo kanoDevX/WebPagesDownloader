@@ -12,7 +12,7 @@ namespace WebPagesDownloader
         private static readonly HttpClient httpClient = new();
         static async Task Main(string[] args)
         {
-            List<string> urls = new() // List of URLs to download (you can put any websites here)
+            List<string> urls = new()
             {
                 "https://www.google.com",
                 "https://www.youtube.com",
