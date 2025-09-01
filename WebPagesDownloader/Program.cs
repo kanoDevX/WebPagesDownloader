@@ -14,8 +14,8 @@ namespace WebPagesDownloader
         private static readonly HttpClient httpClient = new();
         static async Task Main(string[] args)
         {
-            using CancellationTokenSource token = new();
-            List<string> urls = new()
+            var token = new CancellationTokenSource();
+            List<string> urls = new() // List of URLs to download (you can put any websites here)
             {
                 "https://www.google.com",
                 "https://www.youtube.com",
